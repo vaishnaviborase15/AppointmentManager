@@ -290,7 +290,7 @@ Example:
 
 Java Full Stack Developer | AI/ML Enthusiast
 
-GitHub: https://github.com/your-github-username
+GitHub: https://github.com/vaishnaviborase15
 
 LinkedIn: https://linkedin.com/in/your-linkedin-profile
 
