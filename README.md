@@ -118,7 +118,7 @@ Update the database configuration in the project source code:
 ```java
 String url = "jdbc:mysql://localhost:3306/appointment_db";
 String username = "root";
-String password = "your_password";
+String password = "";
 ```
 
 ---
