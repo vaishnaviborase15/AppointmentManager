@@ -128,7 +128,7 @@ String password = "your_password";
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/appointment-manager.git
+git clone https://github.com/vaishnaviborase15/AppointmentManager.git
 ```
 
 ### 2. Import Project into Eclipse
@@ -264,26 +264,6 @@ Through this project, the following concepts were implemented and explored:
 
 ---
 
-## Screenshots
-
-Add screenshots of the following pages inside a `screenshots/` directory:
-
-- Home Page
-- User Registration Page
-- Login Page
-- Appointment Booking Page
-- User Dashboard
-- Admin Dashboard
-
-Example:
-
-```markdown
-![Home Page](screenshots/home.png)
-![Admin Dashboard](screenshots/admin-dashboard.png)
-```
-
----
-
 ## Author
 
 **Vaishnavi Borase**
@@ -292,15 +272,10 @@ Java Full Stack Developer | AI/ML Enthusiast
 
 GitHub: https://github.com/vaishnaviborase15
 
-LinkedIn: https://linkedin.com/in/your-linkedin-profile
+LinkedIn: https://www.linkedin.com/in/vaishnavi-borase-0ba971259
 
 ---
 
-## Resume Description
-
-Developed a web-based Appointment Manager System using Java Servlets, JSP, JDBC, and MySQL. Implemented user authentication, appointment scheduling, session management, and administrative functionalities following the MVC architecture. Designed dynamic web interfaces and integrated database-driven operations to manage appointments efficiently while ensuring modular and maintainable application structure.
-
----
 
 ## License
 
