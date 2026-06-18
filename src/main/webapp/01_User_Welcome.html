@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Panel</title>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Bootstrap CSS for styling -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        
+    background-image: url('img/pink.jpg'); /* Add your background image here */
+    background-size: cover; /* Cover the entire screen */
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        color: #fff; /* White text color for better readability */
+    }
+    .header {
+        background-color: black;
+        
+        color: yellow;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Lucida Handwriting', cursive;
+    }
+    .container {
+        max-width: 600px;
+        margin: 40px auto 0; /* Adds space between the header and container */
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+    .container h1 {
+        color: #fff; /* White color for header text */
+        margin-bottom: 20px;
+    }
+    .container a {
+        display: block;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #333; /* Dark color for buttons */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .container a:hover {
+        background-color: #555; /* Slightly lighter on hover */
+        transform: scale(1.05); /* Subtle pop-up effect */
+    }
+    .container a i {
+        margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><i class=""></i> User Panel</h1>
+    </div>
+
+    <div class="container">
+        <a href="09_User_View_Emp.jsp"><i class="fas fa-users"></i> View Employees</a>
+        <a href="17_User_BookAp.jsp"><i class="fas fa-calendar-check"></i> Book Appointments</a>
+        <a href="18_User_Status.jsp"><i class="fas fa-info-circle"></i> View Status Appointments</a>
+        <a href="19_User_TodaysAp.jsp"><i class="fas fa-calendar-day"></i> View Today's Appointments</a>
+        <a href="20_User_ChangePass.html"><i class="fas fa-key"></i> Change Password</a>
+        <a href="index.html"><i class="fas fa-sign-out-alt"></i> Log out</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Panel</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('img/a1.jpg'); /* Replace with your preferred background image */
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        background-color: black;
+        color: yellow;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Lucida Handwriting', cursive;
+    }
+    .container {
+        width: 100%;
+        max-width: 600px;
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        margin-top: 40px; /* Space between header and menu items */
+    }
+    a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px;
+        font-size: 18px;
+        margin: 10px 0;
+        background-color: #333;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    a:hover {
+        background-color: #555;
+        transform: scale(1.05);
+    }
+    a i {
+        margin-right: 8px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Appointment Manager</h1>
+    </div>
+
+    <div class="container">
+        <a href="11_View_Pending.jsp"><i class="fas fa-list-alt"></i> View Pending Appointments</a>
+        <a href="12_View_Approved.jsp"><i class="fas fa-check"></i> View Approved Appointments</a>
+        <a href="13_View_DisApproved.jsp"><i class="fas fa-times"></i> View Disapproved Appointments</a>
+        <a href="14_Emp_Status.jsp"><i class="fas fa-info-circle"></i> View Status Appointments</a>
+        <a href="15_Emp_TodaysAp.jsp"><i class="fas fa-calendar-day"></i> View Today's Appointments</a>
+        <a href="16_Emp_ChangePass.html"><i class="fas fa-key"></i> Change Password</a>
+        <a href="index.html"><i class="fas fa-sign-out-alt"></i> Log out</a>
+    </div>
+
+</body>
+</html>

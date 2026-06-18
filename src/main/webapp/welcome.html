@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - Welcome</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.apptoto.com/wp-content/uploads/2018/08/top-5-benefits-of-personalized-appointment-reminders-1030x670.jpg'); /* Replace with your preferred background image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: black;
+            color: yellow;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Lucida Handwriting', cursive;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-top: 40px; /* Space between header and menu items */
+        }
+
+        a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px;
+            font-size: 18px;
+            margin: 10px 0;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        a i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Admin Panel</h1>
+    </div>
+
+    <div class="container">
+        <a href="05_Emp_Add.html" onclick="loadContent('addEmployee')"><i class="fas fa-user-plus"></i> Add New Employee</a>
+        <a href="06_Emp_View.jsp"><i class="fas fa-users"></i> View All Employees</a>
+        <a href="10_Admin_View_Users.jsp"><i class="fas fa-user-friends"></i> View Users</a>
+        <a href="index.html"><i class="fas fa-sign-out-alt"></i> Log out</a>
+    </div>
+
+</body>
+
+</html>

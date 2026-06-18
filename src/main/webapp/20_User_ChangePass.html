@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/juo.jpg'); /* Add your background image here */
+    background-size: cover; /* Cover the entire screen */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .app-title {
+            font-family: 'Lucida Handwriting', cursive;
+            font-size: 32px;
+            color: yellow;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            max-width: 500px; /* Increased width of the form */
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .change-password-form {
+            width: 100%;
+        }
+        .change-password-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .change-password-form input[type="password"], .change-password-form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px; /* Increased margin between inputs */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px; /* Increased font size for better readability */
+        }
+        .change-password-form input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .change-password-form input[type="submit"]:hover {
+            background-color: black;
+        }
+        .logout {
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            padding: 12px 24px; /* Increased padding for better clickability */
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .logout:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-title">
+        Appointment Manager
+    </div>
+    <div class="content">
+        <div class="change-password-form">
+            <h2>Change Password</h2>
+            <form action="_07_User_ChangePass" method="post">
+                <input type="password" name="upassword" placeholder="Current Password" required><br>
+                <input type="password" name="newPassword" placeholder="New Password" required><br>
+                <input type="password" name="confirmPassword" placeholder="Confirm New Password" required><br>
+                <input type="submit" value="Change Password">
+            </form>
+        </div>
+        <a class="logout" href="logout.jsp">Logout <i class="fa fa-power-off"></i></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register User</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('img/blackbg.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .container {
+        background-color: #333;
+        color: #fff;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+    .container h1 {
+        font-size: 24px;
+        color: #fff; /* White header color */
+        margin-bottom: 20px;
+        border-left: 3px solid #fff;
+        padding-left: 10px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .container h1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background-color: #fff;
+    }
+    .container a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 0;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+    }
+    .container a:hover {
+        background-color: #444; /* Darker background on hover */
+        color: #ff4d4d;
+        padding-left: 10px;
+    }
+    .container a.active {
+        background-color: #ff4d4d; /* Red background for active link */
+        color: #fff;
+        padding-left: 10px;
+    }
+    .container a i {
+        margin-right: 10px; /* Space between icon and text */
+    }
+    .logout-btn {
+        margin-top: auto;
+        background-color: #222; /* Darker background color */
+        color: #ff4d4d; /* Red color */
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .logout-btn:hover {
+        background-color: #ff4d4d;
+        color: #fff;
+    }
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding: 20px 10px;
+            box-shadow: none;
+        }
+    }
+    .content {
+        margin-left: 250px;
+        padding: 20px;
+    }
+    form {
+        max-width: 400px; /* Reduced width for smaller form */
+        margin: 50px auto; /* Centered the form */
+        background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    h1.form-title {
+        text-align: center;
+        font-size: 24px; /* Smaller font size */
+        color: #ff4d4d; /* Red header color */
+    }
+    input[type="text"], input[type="password"], input[type="email"] {
+        width: 100%;
+        padding: 10px; /* Reduced padding for smaller inputs */
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px; /* Reduced padding for smaller button */
+        background: #ff4d4d; /* Red submit button */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background: #ff1a1a; /* Darker red on hover */
+    }
+    a {
+        color: #007bff; /* Blue link color */
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Dashboard</h1>
+    <a href="04_User_Login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+    <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    <div class="logout-btn">
+        
+    </div>
+</div>
+
+<div class="content">
+    <form action="_05_User_Reg" method="post">
+        <h1 class="form-title">Register User</h1>
+        <input type="text" name="uname" placeholder="Enter Your Name" required>
+        <input type="text" name="udesg" placeholder="Enter Your Designation" required>
+        <input type="text" name="udep" placeholder="Enter Your Department" required>
+        <input type="text" name="cname" placeholder="Enter Company Name" required>
+        <input type="text" name="ucontact" placeholder="Enter Contact Number" required>
+        <input type="text" name="uadd" placeholder="Enter Your Address" required>
+        <input type="email" name="uemail" placeholder="Enter Email ID" required>
+        <input type="password" name="upassword" placeholder="Enter Password" required>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

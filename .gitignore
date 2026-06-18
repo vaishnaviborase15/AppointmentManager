@@ -1,0 +1,25 @@
+# Eclipse
+.metadata/
+.recommenders/
+
+# Java build output
+bin/
+build/
+target/
+*.class
+
+# Generated packages
+*.war
+*.ear
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tomcat / server runtime
+Servers/
+tmp/
+work/

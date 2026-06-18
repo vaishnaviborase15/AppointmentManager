@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/a.jpg');
+            background-color: #f8f9fa;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            background-color: black;
+            color: yellow;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            font-family: 'Lucida Handwriting', cursive;
+            font-style: italic; /* Cursive font style */
+        }
+
+        .home-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 80px; /* Space for fixed header */
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px; /* Limit form width */
+            width: 100%; /* Responsive width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-title {
+            font-family: 'Arial', sans-serif;
+            color: #ffc107;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 22px; /* Adjusted font size */
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%; /* Full width */
+            padding: 8px; /* Reduced padding */
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px; /* Reduced font size */
+        }
+
+        input[type="submit"] {
+            background-color: #ffc107;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px; /* Reduced font size */
+            width: 100%; /* Full width for button */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <button class="home-btn" onclick="window.location.href='welcome.html';">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
+        <h1>Appointment Manager</h1>
+    </div>
+
+    <div class="content">
+        <form action="_02_Emp_Add" method="post">
+            <h1 class="form-title">Add Employee</h1>
+            <input type="text" name="ename" placeholder="Employee Name" required>
+            <input type="text" name="edesg" placeholder="Enter Your Designation" required>
+            <input type="text" name="edep" placeholder="Enter Your Department" required>
+            <input type="text" name="econtact" placeholder="Enter Contact Number" required>
+            <input type="text" name="email" placeholder="Enter Your Email ID" required>
+            <input type="password" name="epassword" placeholder="Enter Your password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
